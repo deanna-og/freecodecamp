@@ -1,0 +1,45 @@
+<html>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Deanna's Survey</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Name</label>
+    <input id="name" placeholder="Your Name" required></input>
+    <br>
+    <label id="email-label" for="email">Email</label>
+    <input id="email" type="email" placeholder="Your Email" required></input>
+    <br>
+    <label id="number-label" for="number">Age</label>
+    <input id="number" type="number" min="0" max="115" placeholder="Age" required></input>
+    <br>
+    <label for="Sex">Sex</label>
+    <select name="Sex" id="dropdown">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Prefer not to say">Prefer not to say</option>
+    </select>
+
+    <p>Would you recommend freeCodeCamp to a friend?</p>
+    <input type="radio" id="yes" name="recommend" value="yes">
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="recommend" value="no">
+      <label for="no">No</label>
+      <input type="radio" id="unsure" name="recommend" value="unsure">
+      <label for="unsure">Unsure</label> <br>
+    <p>How do you prefer to work?</p>
+    <input type="checkbox" id="work place" name="work place" value="remote">
+    <label for="work place"> Remote</label><br>
+    <input type="checkbox" id="work place2" name="work place2" value="office">
+    <label for="work place2"> Office</label><br>
+    <br><br>
+    <label for="extra info"> Additonal information about yourself:</label>
+    <textarea id="extra info" name="extra info" rows="4" cols="50">
+
+  </textarea>
+    <br><br>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+
+</html>
