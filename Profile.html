@@ -1,0 +1,163 @@
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <style>
+    .profile-image {
+      height: 50px;
+      width: 50px;
+      margin: 20px 20px 20px 20px;
+    }
+
+    .project-tile a {
+      height: 50px;
+      background-color: #302F4D;
+      color: #F0D3F7;
+      width: 100%;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .project-tile iframe {
+      height: 300px;
+      pointer-events: none;
+    }
+
+    .project-tile {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      height: 350px;
+      border: 1px;
+      border-style: solid;
+      margin: 20px 35px 20px 35px;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .profile {
+      background-color: #A57982;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .projects {
+      background-color: #F0D3F7;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    h1.welcome-text {
+      font-size: 50px;
+    }
+
+    p.welcome-text {
+      font-size: 35px;
+    }
+
+    .welcome-text {
+      color: #120D31;
+    }
+
+    body {
+      font-family: 'Indie Flower', cursive;
+      margin: 0px;
+    }
+
+    .welcome-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #B98EA7;
+    }
+
+    section {
+      height: 100vh;
+    }
+
+    .nav a {
+      color: #F0D3F7;
+      text-decoration: none;
+      font-size: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .nav {
+      overflow: hidden;
+      height: 50px;
+      background-color: #302F4D;
+      position: fixed;
+      top: 0px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    main {
+      margin-top: 50px;
+    }
+
+    @media screen and (max-width:700px) {
+      .projects {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <nav id="navbar">
+      <a id="welcomelink" href="#welcome-section">About me</a>
+      <a id="projects-link" href="#projects">Projects</a>
+      <a id="profile-navlink" href="#profile-section">Profile</a>
+
+    </nav>
+  </div>
+  <main>
+    <section id="welcome-section" class="welcome-section">
+      <h1 class="welcome-text">Hey, I am Deanna</h1>
+      <p class="welcome-text">a web developer</p>
+    </section>
+    <section id="projects" class="projects">
+      <div class="project-tile">
+        <iframe src="https://codepen.io/deannatrace/full/LYzdvbB"></iframe>
+        <a href="https://codepen.io/deannatrace/full/LYzdvbB">My Documention Project</a>
+
+      </div>
+      <div class="project-tile">
+        <iframe src="https://codepen.io/deannatrace/full/zYdRLaY"></iframe>
+        <a href="https://codepen.io/deannatrace/full/zYdRLaY">Tribute</a>
+
+      </div>
+      <div class="project-tile">
+        <iframe src="https://codepen.io/deannatrace/full/QWqGqgV"></iframe>
+        <a href="https://codepen.io/deannatrace/full/QWqGqgV">Survey</a>
+
+      </div>
+      <div class="project-tile">
+        <iframe src="https://codepen.io/deannatrace/full/LYzdejX"></iframe>
+        <a href="https://codepen.io/deannatrace/full/LYzdejX">Project Landing Page</a>
+
+      </div>
+
+    </section>
+    <section id="profile-section" class="profile">
+      <a id="profile-link" target="_blank" href="https://github.com/deanna-og"><img id="profile link 1" class="profile-image" src="https://raw.githubusercontent.com/primer/octicons/main/icons/mark-github-16.svg"></img></a>
+
+      <a id="profile-link" target="_blank" href="https://www.linkedin.com/in/deannagtrace/"><img id="profile link 2" class="profile-image" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"></img></a>
+
+      <a id="profile-link" target="_blank" href="https://codepen.io/deannatrace/"><img id="profile link 3" class="profile-image" src="https://www.svgrepo.com/show/332020/codepen-circle.svg"></img></a>
+    </section>
+  </main>
+</body>
+
+</html>
